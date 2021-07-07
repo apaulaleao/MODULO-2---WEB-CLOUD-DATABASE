@@ -1,0 +1,18 @@
+CREATE TABLE atletas(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    imagem_url VARCHAR(255) NOT NULL,
+);
+ALTER TABLE atletas add column descricao VARCHAR(255) default ' ';
+
+UPDATE atletas SET descricao = 'ola ola ' WHERE id = 1;
+UPDATE atletas SET descricao = 'oba oba bluemers ' WHERE id = 2;
+
+
+INSERT INTO atletas (nome, imagem_url,descricao)
+VALUES  ('Laranja Mecânica', 'https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/91/05/58/20127559.jpg'),
+        ('Frozen', 'https://lumiere-a.akamaihd.net/v1/images/p_frozen_18373_3131259c.jpeg'),
+        ('De Volta Para O Futuro', 'https://image.tmdb.org/t/p/w342/i996T0lI1fGtFEowiH3V6eZthL0.jpg'),
+        ('Vida de Inseto', 'https://br.web.img3.acsta.net/medias/nmedia/18/92/03/69/20176403.jpg');
+
+    background-color: #3359ec;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Aula20/Proj1/templates/favicon.ico" type="image/x-icon">
+    <title>Catálogo - Jogos Olimpicos</title>
+    <link rel="stylesheet" href="/static/estilo.css" />
+     
+
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="bloco">
+        <h1>Principais Notícias!</h1>
+    </div>
+
+    <div class="div-interna-elementos">
+      
+
+    <div>
+        <div class="div-read_noticias">
+                            
+            <img src ="https://veja.abril.com.br/wp-content/uploads/2021/07/GettyImages-1233803950.jpg" alt="basquete" width="200px" height="200px"/>
+            <p class="texto-imagem"><a href="https://ge.globo.com/olimpiadas/noticia/basquete-brasil-para-na-alemanha-e-e-nao-se-classifica-para-toquio.ghtml">Basquete masculino do Brasil não se classifica para Olimpíadas de Tóquio.</a></p>
+              
+        </div>
+    </div>
+    <div>
+        <div class="div-read_noticias">
+                          
+            <img src ="https://ogimg.infoglobo.com.br/in/25088801-19d-958/FT1086A/xselecao.jpg.pagespeed.ic.iLgzUYb3RX.jpg" alt="voley" width="200px" height="200px"/>
+            <p class="texto-imagem"><a href="https://oglobo.globo.com/esportes/toquio-2020/volei-feminino-em-toquio-brasil-aposta-em-equipe-com-oito-novatas-em-olimpiadas-25088408">Vôlei feminino: em Tóquio, Brasil aposta em equipe com oito 'novatas' em Olimpíadas.</a></p>
+        </div>
+      
+    </div>
+    <div>
+        <div class="div-read_noticias">
+                          
+            <img src ="https://bolavip.com/__export/1625431420131/sites/bolavip/img/2021/07/04/zico-tocha-olimpica-japao_crop1625431287275.jpg_1902800913.jpg" alt="zico" width="200px" height="200px"/>
+            <p class="texto-imagem"><a href="https://www.uol.com.br/esporte/olimpiadas/ultimas-noticias/2021/07/04/zico-carrega-tocha-olimpica-no-japao-brasil-me-negou-essa-oportunidade.htm">Zico carrega tocha olímpica no Japão: 'Brasil me negou essa oportunidade.. </a></p>
+        </div>
+      
+    </div>
+
+                
+     
+    
+            
+        
+
+    </div>
+
+   
+
+   
+
+    <div class="bloco">
+        <h2>Temos um total de <span class="novo_id">{{ total }}</span> atletas cadastrados!</h2>
+    </div>
+
+
+</body>
+
+<div class ="footer">
+    <h3>Feito com amor <img src="https://magiagifs.com.br/wp-content/uploads/2019/08/gifs-coracao-pulsando-apaixonado2.gif" width="25px"> </h3> 
+</div>
+
+</html>
